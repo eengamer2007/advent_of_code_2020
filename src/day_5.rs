@@ -1,3 +1,5 @@
+#[allow(dead_code)]
+
 use crate::help;
 use std::str::FromStr;
 use std::collections::VecDeque;

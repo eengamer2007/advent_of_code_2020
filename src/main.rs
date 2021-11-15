@@ -4,8 +4,11 @@ use pretty_env_logger;
 mod help;
 mod day_4;
 mod day_5;
+mod day_6;
+
+#[allow(dead_code)]
 
 fn main() {
     pretty_env_logger::init();
-    println!("{}",day_5::part_2());
+    println!("{}",day_6::part_1());
 }

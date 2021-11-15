@@ -1,3 +1,5 @@
+#[allow(dead_code)]
+
 use crate::help::read;
 use std::str::FromStr;
 use pretty_env_logger;
