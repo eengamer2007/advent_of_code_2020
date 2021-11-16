@@ -1,10 +1,9 @@
-#[allow(dead_code)]
-
 use crate::help::read;
 use std::str::FromStr;
-use pretty_env_logger;
+//use pretty_env_logger;
 
-pub fn part_1(){
+#[allow(dead_code)]
+pub fn part_1() -> u32{
     let input = read::<String>("day_4").unwrap();
     let mut correct: u32 = 0;
     let mut clear_count: u32 = 0;
@@ -46,6 +45,7 @@ pub fn part_1(){
     }
     //println!("{:?}, {}", input, correct);
     println!("{}, {}", clear_count, correct);
+    return clear_count;
 }
 
 enum Height{
@@ -87,7 +87,9 @@ impl Passport{
     }
 }
 */
-pub fn part_2(){
+
+#[allow(dead_code)]
+pub fn part_2() -> u16{
     let input = read::<String>("day_4").unwrap();
     let mut current_vec: Vec<&str> = vec!();
     for  i in input.iter() {
@@ -108,4 +110,5 @@ pub fn part_2(){
             current_vec.clear()
         }
     }
+    return 0;
 }

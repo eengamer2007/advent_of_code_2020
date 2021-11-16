@@ -1,8 +1,6 @@
-#[allow(dead_code)]
-
 use crate::help;
 use std::str::FromStr;
-use std::collections::VecDeque;
+//use std::collections::VecDeque;
 
 #[derive(Debug)]
 struct Seat{
@@ -46,6 +44,7 @@ impl FromStr for Seat{
     }
 }
 
+#[allow(dead_code)]
 pub fn part_1() -> u16{
     let input = help::read::<Seat>("day_5").unwrap();
     let mut highest: u16 = 0;
@@ -58,6 +57,7 @@ pub fn part_1() -> u16{
     return highest;
 }
 
+#[allow(dead_code)]
 pub fn part_2() -> u16{
     let seat_vec: Vec<Seat> = help::read("day_5").unwrap();
     let mut seat_id_vec: Vec<u16> = vec!();
